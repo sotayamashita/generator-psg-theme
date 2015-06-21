@@ -18,7 +18,7 @@ describe('psg-theme:app', function () {
       'bower.json',
       'package.json',
       '.editorconfig',
-      '.jshintrc'
+      '.gitignore'
     ]);
   });
 });

@@ -35,14 +35,21 @@ module.exports = yeoman.generators.Base.extend({
       )
     },
 
-    projectfiles: function () {
+    gitfiles: function () {
       this.fs.copy(
-        this.templatePath('editorconfig'),
-        this.destinationPath('.editorconfig')
+        this.templatePath('gitattributes'),
+        this.destinationPath('.gitattributes')
       )
       this.fs.copy(
         this.templatePath('gitignore'),
         this.destinationPath('.gitignore')
+      )
+    },
+
+    projectfiles: function () {
+      this.fs.copy(
+        this.templatePath('editorconfig'),
+        this.destinationPath('.editorconfig')
       )
     }
   },

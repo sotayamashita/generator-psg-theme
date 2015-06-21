@@ -1,5 +1,8 @@
 {
-  "name": "package",
+  "name": "psg-theme-foo",
   "version": "0.0.0",
+  "keywords": [
+    "psg-theme"
+  ],
   "dependencies": {}
 }

@@ -2,7 +2,7 @@
 
 > [Yeoman](http://yeoman.io) generator
 
-It's the generator of [PostCSS Style Guide](https://github.com/morishitter/postcss-style-guide).
+Scaffold out a [PostCSS Style Guide](https://github.com/morishitter/postcss-style-guide) Theme.
 
 [![Build Status](https://secure.travis-ci.org/sotayamashita/generator-psg-theme.png?branch=master)](https://travis-ci.org/sotayamashita/generator-psg-theme) [![Dependency Status](https://gemnasium.com/sotayamashita/psg-theme-sassline.svg)](https://gemnasium.com/sotayamashita/psg-theme-sassline)
 

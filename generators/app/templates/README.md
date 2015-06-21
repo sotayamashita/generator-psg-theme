@@ -1,4 +1,4 @@
-# psg-theme-foo
+# <%= appname %>
 
 TODO: Please write description.
 

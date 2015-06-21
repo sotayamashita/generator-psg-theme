@@ -1,5 +1,5 @@
 {
-  "name": "psg-theme-foo",
+  "name": "<%= appname %>",
   "version": "0.0.0",
   "keywords": [
     "psg-theme"

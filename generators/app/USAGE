@@ -1,0 +1,12 @@
+Description:
+  Creates a basic PostCSS Style Guide Theme to scaffold an application
+
+Example:
+  yo psg-theme
+
+  This will create:
+    README.md: Description and minimal user instructions
+    package.json: Development packages installed by npm
+
+    template.ejs: template of style guide
+    style.css: style of template

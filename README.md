@@ -1,9 +1,12 @@
-# generator-psg-theme [![Build Status](https://secure.travis-ci.org/sotayamashita/generator-psg-theme.png?branch=master)](https://travis-ci.org/sotayamashita/generator-psg-theme)
-
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-
+# generator-psg-theme
 
 > [Yeoman](http://yeoman.io) generator
+
+It's the generator of [PostCSS Style Guide](https://github.com/morishitter/postcss-style-guide).
+
+[![Build Status](https://secure.travis-ci.org/sotayamashita/generator-psg-theme.png?branch=master)](https://travis-ci.org/sotayamashita/generator-psg-theme) [![Dependency Status](https://gemnasium.com/sotayamashita/psg-theme-sassline.svg)](https://gemnasium.com/sotayamashita/psg-theme-sassline)
+
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 
 ## Getting Started
@@ -47,4 +50,4 @@ If you'd like to get to know Yeoman better and meet some of his friends, [Grunt]
 
 ## License
 
-MIT © Sota Yamashita
+MIT © [Sota Yamashita](https://github.com/sotayamashita)

@@ -29,7 +29,7 @@ module.exports = yeoman.generators.Base.extend({
       var prompts = [{
         type: 'input',
         name: 'themeName',
-        message: 'What\'s the theme name of your PostCSS Style Guide?',
+        message: "What's the theme name of your PostCSS Style Guide?",
         default: themeName
       }, {
         type: 'confirm',

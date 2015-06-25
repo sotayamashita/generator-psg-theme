@@ -23,7 +23,7 @@ module.exports = yeoman.generators.Base.extend({
 
       // Have Yeoman greet the user.
       this.log(yosay(
-        'Welcome to the mathematical ' + chalk.red('PostCSS Theme') + ' generator!'
+        'Welcome to the mathematical ' + chalk.red('PostCSS Style Guide Theme') + ' generator!'
       ))
 
       var prompts = [{

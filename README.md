@@ -4,7 +4,7 @@
 
 Scaffold out a [PostCSS Style Guide](https://github.com/morishitter/postcss-style-guide) Theme.
 
-[![Build Status](https://secure.travis-ci.org/sotayamashita/generator-psg-theme.png?branch=master)](https://travis-ci.org/sotayamashita/generator-psg-theme) [![Dependency Status](https://gemnasium.com/sotayamashita/psg-theme-sassline.svg)](https://gemnasium.com/sotayamashita/psg-theme-sassline)
+[![npm version](https://badge.fury.io/js/generator-psg-theme.svg)](http://badge.fury.io/js/generator-psg-theme) [![Build Status](https://secure.travis-ci.org/sotayamashita/generator-psg-theme.png?branch=master)](https://travis-ci.org/sotayamashita/generator-psg-theme) [![Dependency Status](https://gemnasium.com/sotayamashita/psg-theme-sassline.svg)](https://gemnasium.com/sotayamashita/psg-theme-sassline)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 

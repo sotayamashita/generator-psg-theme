@@ -4,8 +4,6 @@
   "keywords": [
     "psg-theme"
   ],
-  "files": [
-    "<%= appGeneratorDir %>"
-  ],
+  "files": [],
   "dependencies": {}
 }

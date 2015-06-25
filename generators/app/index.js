@@ -16,12 +16,30 @@ var extractThemeName = function (appname) {
 }
 
 module.exports = yeoman.generators.Base.extend({
+  constructor: function () {
+    yeoman.Base.apply(this, arguments)
+
+    this.option('flat', {
+      type: Boolean,
+      required: false,
+      defaults: false,
+      desc: 'When specified, generators will be created at the top level of the project.'
+    })
+  },
+
+  initializing: function () {
+    this.pkg = require('../../package.json')
+    this.currentYear = (new Date()).getFullYear()
+    this.config.set('structure', this.options.flat ? 'flat' : 'nested')
+    this.generatorsPrefix = this.options.flat ? '' : './'
+    this.appGeneratorDir = this.options.flat ? 'app' : 'generators'
+  },
+
   prompting: {
-    askForThemeName: function () {
+    askFor: function () {
       var done = this.async()
       var themeName = extractThemeName(this.appname)
 
-      // Have Yeoman greet the user.
       this.log(yosay(
         'Welcome to the mathematical ' + chalk.red('PostCSS Style Guide Theme') + ' generator!'
       ))
@@ -46,7 +64,7 @@ module.exports = yeoman.generators.Base.extend({
             }
 
             if (err) {
-              //
+              console.log(err)
             }
 
             done(false)
@@ -56,11 +74,11 @@ module.exports = yeoman.generators.Base.extend({
 
       this.prompt(prompts, function (props) {
         if (props.askNameAgain) {
-          return this.prompting.askForThemeName.call(this)
+          return this.prompting.askFor.call(this)
         }
 
         this.themeName = props.themeName
-        this.appname = _s.slugify('psg-theme' + this.themeName)
+        this.appname = _s.slugify('psg-theme-' + this.themeName)
 
         done()
       }.bind(this))
@@ -68,11 +86,9 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   writing: {
-    app: function () {
-      this.fs.copy(
-        this.templatePath('_package.json'),
-        this.destinationPath('package.json')
-      )
+    projectfiles: function () {
+      this.template('_package.json', 'package.json')
+      this.template('README.md')
     },
 
     gitfiles: function () {
@@ -86,15 +102,23 @@ module.exports = yeoman.generators.Base.extend({
       )
     },
 
-    projectfiles: function () {
+    templates: function () {
       this.fs.copy(
         this.templatePath('editorconfig'),
         this.destinationPath('.editorconfig')
+      )
+      this.fs.copy(
+        this.templatePath('template.ejs'),
+        this.destinationPath('template.ejs')
+      )
+      this.fs.copy(
+        this.templatePath('style.css'),
+        this.destinationPath('style.css')
       )
     }
   },
 
   install: function () {
-    this.installDependencies()
+    this.npmInstall()
   }
 })

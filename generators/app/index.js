@@ -56,7 +56,7 @@ module.exports = yeoman.generators.Base.extend({
         default: true,
         when: function (answers) {
           var done = this.async()
-          var name = 'psg-theme-' + answers.generatorName
+          var name = 'psg-theme-' + answers.themeName
 
           npmName(name, function (err, available) {
             if (!available) {

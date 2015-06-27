@@ -38,9 +38,7 @@ module.exports = yeoman.generators.Base.extend({
   prompting: {
     askFor: function () {
       var done = this.async()
-      console.log(this.appname)
       var themeName = extractThemeName(this.appname)
-      console.log(themeName)
 
       this.log(yosay(
         'Welcome to the mathematical ' + chalk.red('PostCSS Style Guide Theme') + ' generator!'
@@ -117,6 +115,10 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copy(
         this.templatePath('style.css'),
         this.destinationPath('style.css')
+      )
+      this.fs.copy(
+        this.templatePath('LICENSE.md'),
+        this.destinationPath('LICENSE.md')
       )
     }
   },

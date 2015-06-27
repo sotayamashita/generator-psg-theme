@@ -6,6 +6,8 @@ TODO: Please write description.
 
 TODO: Please add a capture image.
 
+![Image of <%= appname %>](https://octodex.github.com/images/yaktocat.png)
+
 ## License
 
 MIT © bar

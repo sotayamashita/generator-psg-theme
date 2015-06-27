@@ -90,6 +90,7 @@ module.exports = yeoman.generators.Base.extend({
   writing: {
     projectfiles: function () {
       this.template('_package.json', 'package.json')
+      this.template('LICENSE.md')
       this.template('README.md')
     },
 

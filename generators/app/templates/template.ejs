@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= projectName %></title>
+  <style><%- codeStyle %><%- tmplStyle %><%- rootStyle %><%- processedCSS %></style>
+</head>
+<body>
+  <!-- Repeat map -->
+  <% maps.forEach(function (map) { %>
+    <!-- Output HTML code -->
+    <%- map.html %>
+    <!-- Ouput CSS code. PostCSS Style Guide has hightlight.js. -->
+    <pre class="code"><code class="lang-css"><%- map.rule %></code></pre>
+  <% })%>
+</body>
+</html>

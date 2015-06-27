@@ -6,7 +6,7 @@ var npmName = require('npm-name')
 var _s = require('underscore.string')
 
 var extractThemeName = function (appname) {
-  var match = appname.match(/^psg-theme-(.+)/)
+  var match = appname.match(/^psg theme (.+)/)
 
   if (match && match.length === 2) {
     return match[1].toLowerCase()
@@ -38,7 +38,9 @@ module.exports = yeoman.generators.Base.extend({
   prompting: {
     askFor: function () {
       var done = this.async()
+      console.log(this.appname)
       var themeName = extractThemeName(this.appname)
+      console.log(themeName)
 
       this.log(yosay(
         'Welcome to the mathematical ' + chalk.red('PostCSS Style Guide Theme') + ' generator!'

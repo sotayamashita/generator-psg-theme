@@ -25,12 +25,12 @@
     "chalk": "^1.0.0",
     "npm-name": "^1.1.1",
     "underscore.string": "^3.1.1",
-    "yeoman-generator": "^0.19.0",
-    "yosay": "^1.0.2"
+    "yeoman-generator": "^0.20.1",
+    "yosay": "^1.0.4"
   },
   "devDependencies": {
     "mocha": "*",
-    "standard": "^4.3.1"
+    "standard": "^4.5.1"
   },
   "standard": {
     "ignore": [
